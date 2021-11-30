@@ -14,7 +14,7 @@ class Produk extends Model{
 		return $this->belongsTo(User::class, 'id_user');
 	}
 	
-	function getHargaStringAttribute(){
+	function getHargaAttribute(){
 		return "Rp. ".number_format($this->attributes['harga']);
 	}
 
